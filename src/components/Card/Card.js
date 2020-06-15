@@ -1,16 +1,13 @@
 import React from "react";
 import './Card.css';
+import TextSection from "./TextSection/TextSection";
+import ImageSection from "./ImageSection/ImageSection";
 
 export default function Card(){
   return (
-      <article>
-        <section>
-          <h2></h2>
-          <p></p>
-        </section>
-        <section>
-          <img src="" alt=""/>
-        </section>
+      <article className="Card">
+        <TextSection></TextSection>
+        <ImageSection></ImageSection>
       </article>
   )
 }

@@ -5,17 +5,15 @@ import Header from './components/Header/Header';
 import MainContent from "./components/MainContent/MainContent";
 import Card from "./components/Card/Card";
 
+
 function App() {
   return (
     <div className="App">
-      <Header>Website Title</Header>
+      <Header>Peng, Peng, Penguin</Header>
       <MainContent>
         <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
       </MainContent>
-      <Footer>Footer text</Footer>
+      <Footer>Happy footer</Footer>
     </div>
   );
 }

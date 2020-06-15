@@ -1,3 +1,5 @@
 .MainContent {
     flex-grow: 1;
+    color: snow;
+    width: 100vm;
 }
