@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 50%;
+    height: 80%;
+}
+
+input {
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.submit {
+    width: 20%;
+    margin: 0;
+}
+
+@keyframes grow {
+    0% {
+        width: 20%;
+        background: transparent;
+        font-size: 14pt;
+        box-shadow: 0 0 15px 10px snow;
+    }
+    50% {
+        width: 25%;
+        background: snow;
+        opacity: 85%;
+        box-shadow: 0 0 15px 10px lightskyblue;
+    }
+    100% {
+        width: 20%;
+        background: transparent;
+        font-size: 14pt;
+        box-shadow: 0 0 15px 10px snow;
+    }
+
+}
+
+.submit:hover {
+    animation: grow 1.8s ease-in-out infinite;
+}
+
+label {
+    text-align-all: center;
+    margin: auto 0;
+    font-size: 16pt;
+    font-weight: 700;
+}

@@ -1,5 +1,27 @@
 .MainContent {
     flex-grow: 1;
-    color: snow;
-    width: 100vm;
+    background: url("https://cdn.pixabay.com/photo/2015/03/26/10/07/ice-690964_1280.jpg");
+    background-size: 130%;
+    background-position-x: -40px;
+    background-position-y: -90px;
+    animation: pan 10s ease-in-out infinite ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: scroll;
+    border: 1px solid black;
+
+}
+
+@keyframes pan {
+    0% {
+        background-position-x: -40px;
+    }
+    50% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -40px;
+    }
 }
