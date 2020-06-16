@@ -1,0 +1,47 @@
+.buttonBar {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 6vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    background: transparent;
+}
+
+button {
+    margin: 0 auto;
+    width: 40%;
+    background: transparent;
+    box-shadow: 0 0 15px 10px snow;
+    border: 1px solid black;
+    border-radius: 10px;
+    -moz-outline-radius: 10px ;
+    font-size: 14pt;
+    height: 100%;
+}
+
+@keyframes growing {
+    0% {
+        width: 40%;
+        background: transparent;
+        font-size: 14pt;
+        box-shadow: 0 0 15px 10px snow;
+    }
+    50% {
+        width: 45%;
+        background: snow;
+        opacity: 85%;
+        box-shadow: 0 0 15px 10px lightskyblue;
+    }
+    100% {
+        width: 40%;
+        background: transparent;
+        font-size: 14pt;
+        box-shadow: 0 0 15px 10px snow;
+    }
+
+}
+
+button:hover {
+    animation: growing 1.8s ease-in-out infinite;
+}
