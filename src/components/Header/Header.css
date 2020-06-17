@@ -1,12 +1,12 @@
-.Header  {
-    height: 60px;
+.Header {
     text-align: center;
-    background-color: snow;
-    color: lightskyblue;
-    padding: 10px 0;
+    background-color: transparent;
+    color: black;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
 }
 
 h1 {
-    height: 70%;
-    margin: auto 0;
+    background-color: transparent;
 }

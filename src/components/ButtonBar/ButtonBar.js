@@ -6,6 +6,7 @@ export default function ButtonBar(props) {
       <div className="buttonBar">
         <button onClick={props.bear}>Bear me</button>
         <button onClick={props.penguin}>Peng, Peng, Penguin</button>
+        <button onClick={props.fox}>What the fox</button>
       </div>
   );
 }
