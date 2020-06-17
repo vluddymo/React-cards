@@ -1,14 +1,15 @@
-.Footer  {
+.Footer {
     text-align: center;
-    background-color: snow;
-    color: lightskyblue;
+    background-color: transparent;
+    color: black;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    border: 1px solid black;
 }
 
-h5 {
+h3 {
     text-align: center;
 }

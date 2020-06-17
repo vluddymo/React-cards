@@ -5,7 +5,7 @@ import NewsletterForm from "./NewsletterForm/NewsletterForm";
 export default function Footer(props) {
   return (
       <footer className="Footer">
-        <h4>{props.children}</h4>
+        <h3>{props.children}</h3>
         <NewsletterForm></NewsletterForm>
       </footer>
   )

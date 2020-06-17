@@ -1,6 +1,5 @@
 .App {
     display: flex;
     flex-flow: column nowrap;
-    background-color: lightskyblue;
     height: 100vh;
 }
