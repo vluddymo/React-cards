@@ -3,7 +3,6 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import MainContent from "./components/MainContent/MainContent";
-import Card from "./components/Card/Card";
 import ButtonBar from "./components/ButtonBar/ButtonBar";
 import CardMUI from "./components/CardMUI/CardMUI";
 
@@ -38,27 +37,27 @@ function App() {
 
   const [animal, setAnimal] = React.useState(cardContent[0])
 
-  function switchToPenguin (){
-    return getData().then((data)=> setAnimal(data[0]))
+  function switchToPenguin() {
+    return getData().then((data) => setAnimal(data[0]))
   }
 
-  function switchToBear (){
-    return getData().then((data)=> setAnimal(data[1]))
+  function switchToBear() {
+    return getData().then((data) => setAnimal(data[1]))
   }
 
-  function switchToFox (){
-    return getData().then((data)=> setAnimal(data[2]))
+  function switchToFox() {
+    return getData().then((data) => setAnimal(data[2]))
   }
 
   return (
-    <div className="App">
-      <Header>Animals of the north pole</Header>
-      <MainContent>
-        <ButtonBar fox={switchToFox} bear={switchToBear} penguin={switchToPenguin}></ButtonBar>
-        <CardMUI cardContent={animal}></CardMUI>
-      </MainContent>
-      <Footer>Happy footer</Footer>
-    </div>
+      <div className="App">
+        <Header>Animals of the north pole</Header>
+        <MainContent>
+            <ButtonBar fox={switchToFox} bear={switchToBear} penguin={switchToPenguin}></ButtonBar>
+            <CardMUI cardContent={animal}></CardMUI>
+        </MainContent>
+        <Footer>Happy footer</Footer>
+      </div>
   );
 }
 
