@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import MainContent from "./components/MainContent/MainContent";
 import ButtonBar from "./components/ButtonBar/ButtonBar";
 import CardMUI from "./components/CardMUI/CardMUI";
-import {Link, BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {Link, Switch, Route} from "react-router-dom";
 
 const cardContent = [
   {
@@ -49,14 +49,12 @@ function App() {
     return getData().then((data) => setAnimal(data[2]))
   }
 
-  const someEventHandler = () => (window.location = "/animals");
 
   return (
 
       <div className="App">
         <Header>Animals of the north pole</Header>
         <MainContent>
-          <Router>
             <Switch>
               <Route path="/animals">
                 <ButtonBar fox={switchToFox} bear={switchToBear} penguin={switchToPenguin}></ButtonBar>
@@ -71,7 +69,6 @@ function App() {
                 </div>
               </Route>
             </Switch>
-          </Router>
         </MainContent>
         <Footer>Happy footer</Footer>
       </div>
