@@ -4,3 +4,44 @@
     height: 100vh;
     overflow: scroll;
 }
+
+.divy {
+    text-align: center;
+    height: 50%;
+    width: 50%;
+
+}
+
+.start {
+    width: 50%;
+    height: 30%;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 14pt;
+    flex-grow: 1;
+    margin: 30px auto;
+}
+
+@keyframes swell {
+    0% {
+        width: 50%;
+        background: transparent;
+        box-shadow: 0 0 15px 10px snow;
+    }
+    50% {
+        width: 55%;
+        background: snow;
+        opacity: 85%;
+        box-shadow: 0 0 15px 10px lightskyblue;
+    }
+    100% {
+        width: 50%;
+        background: transparent;
+        box-shadow: 0 0 15px 10px snow;
+    }
+
+}
+
+.start:hover {
+    animation: swell 1.8s ease-in-out infinite;
+}
