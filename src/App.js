@@ -5,18 +5,18 @@ import Header from './components/Header/Header';
 import MainContent from "./components/MainContent/MainContent";
 import ButtonBar from "./components/ButtonBar/ButtonBar";
 import CardMUI from "./components/CardMUI/CardMUI";
-
+import {Link, Switch, Route} from "react-router-dom";
 
 const cardContent = [
   {
     title: "Pinguine sind lit!",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque debitis eum eveniet excepturi incidunt ipsa labore laboriosam odio quia, quibusdam recusandae reiciendis sed sunt suscipit, temporibus vel vitae! Autem consequuntur dolores ea, nam optio provident quis temporibus voluptatum. Consequuntur?",
-    imgSource: "https://cdn.pixabay.com/photo/2012/09/04/21/20/penguin-56101_1280.jpg"
+    text: "Loading...",
+    imgSource: ""
   },
   {
     title: "Eis-Eis-Bärby!",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque debitis eum eveniet excepturi incidunt ipsa labore laboriosam odio quia, quibusdam recusandae reiciendis sed sunt suscipit, temporibus vel vitae! Autem consequuntur dolores ea, nam optio provident quis temporibus voluptatum. Consequuntur?",
-    imgSource: "https://cdn.pixabay.com/photo/2015/12/21/13/08/bear-1102605_1280.jpg"
+    text: "Loading...",
+    imgSource: ""
   },
   {
     title: "Praise the Polarfuchs!",
@@ -49,15 +49,30 @@ function App() {
     return getData().then((data) => setAnimal(data[2]))
   }
 
+
   return (
+
       <div className="App">
         <Header>Animals of the north pole</Header>
         <MainContent>
-            <ButtonBar fox={switchToFox} bear={switchToBear} penguin={switchToPenguin}></ButtonBar>
-            <CardMUI cardContent={animal}></CardMUI>
+            <Switch>
+              <Route path="/animals">
+                <ButtonBar fox={switchToFox} bear={switchToBear} penguin={switchToPenguin}></ButtonBar>
+                <CardMUI cardContent={animal}></CardMUI>
+              </Route>
+              <Route path="/">
+                <div className="divy">
+                  <h1>Hey!</h1>
+                  <h2>Welcome, fellow north pole enthusiast</h2>
+                  <Link to="/animals"><button className="start">Check out some cool north pole animals</button>
+                    </Link>
+                </div>
+              </Route>
+            </Switch>
         </MainContent>
         <Footer>Happy footer</Footer>
       </div>
+
   );
 }
 

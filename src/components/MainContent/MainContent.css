@@ -11,6 +11,7 @@
     flex-flow: row nowrap;
     overflow: scroll;
     border: 1px solid black;
+    box-shadow: 0 0 15px 10px lightskyblue;
 
 }
 
