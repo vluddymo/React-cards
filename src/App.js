@@ -9,19 +9,9 @@ import {Link, Switch, Route} from "react-router-dom";
 
 const cardContent = [
   {
-    title: "Pinguine sind lit!",
-    text: "Loading...",
-    imgSource: ""
-  },
-  {
-    title: "Eis-Eis-Bärby!",
-    text: "Loading...",
-    imgSource: ""
-  },
-  {
-    title: "Praise the Polarfuchs!",
-    text: "Loading...",
-    imgSource: ""
+    title: "This Goat wants you to choose",
+    text: "goat it ?",
+    imgSource: "http://placegoat.com/500/350"
   }
 ]
 
